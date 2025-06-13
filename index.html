@@ -1,113 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AA GANG Reviews</title>
-  <link rel="stylesheet" href="https://myvouch.es/storage/assets/vouches.css"/>
-  <style>
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AA GANG Reviews</title>
+    <!-- MyVouches Embed -->
+    <link rel="stylesheet" href="https://myvouch.es/storage/assets/vouches.css"/>
+    <script>window.slug = 'aa-gang-v2'</script>
+    <script src="https://myvouch.es/storage/assets/vouches.js"></script>
+    <style>
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
-    body {
-      margin: 0;
-      background: url('aav2-banner.jpg') center center / cover no-repeat fixed;
-      color: white;
-      font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      animation: fadeInUp 1s ease-out;
-      position: relative;
-    }
+        body {
+            margin: 0;
+            background: linear-gradient(145deg, #000000, #1a0000);
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeInUp 1s ease-out;
+        }
 
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.6);
-      z-index: 0;
-    }
+        .banner {
+            margin-top: 10px;
+            height: 60px;
+            width: auto;
+            max-width: 80%;
+            object-fit: contain;
+            box-shadow: 0 0 10px red;
+            border-radius: 6px;
+        }
 
-    body > * {
-      position: relative;
-      z-index: 1;
-    }
+        .logo {
+            margin-top: 20px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            box-shadow: 0 0 20px #ff1a1a;
+            animation: fadeInUp 1s ease-out;
+        }
 
-    .banner {
-      margin-top: 10px;
-      height: 60px;
-      width: auto;
-      max-width: 80%;
-      object-fit: contain;
-      box-shadow: 0 0 10px red;
-      border-radius: 6px;
-    }
+        h1 {
+            color: #ff1a1a;
+            margin: 20px 0 10px;
+            font-size: 32px;
+            text-shadow: 0 0 8px red;
+        }
 
-    .logo {
-      margin-top: 20px;
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      box-shadow: 0 0 20px #ff1a1a;
-      animation: fadeInUp 1s ease-out;
-    }
+        #vouchesContainer {
+            width: 90%;
+            max-width: 800px;
+            margin-top: 20px;
+            animation: fadeInUp 1s ease-out;
+        }
 
-    h1 {
-      color: #ff1a1a;
-      margin: 20px 0 10px;
-      font-size: 32px;
-      text-shadow: 0 0 8px red;
-    }
+        .discord-btn {
+            margin-top: 30px;
+            padding: 12px 24px;
+            background-color: #7289da;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 0 10px #7289da;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
 
-    #vouchesContainer {
-      width: 90%;
-      max-width: 800px;
-      margin-top: 20px;
-      animation: fadeInUp 1s ease-out;
-    }
-
-    .discord-btn {
-      margin-top: 30px;
-      padding: 12px 24px;
-      background-color: #7289da;
-      color: white;
-      font-weight: bold;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      text-decoration: none;
-      box-shadow: 0 0 10px #7289da;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-
-    .discord-btn:hover {
-      background-color: #5b6eae;
-      transform: scale(1.05);
-    }
-  </style>
-  <script>
-    window.slug = 'aa-gang-v2';
-  </script>
-  <script src="https://myvouch.es/storage/assets/vouches.js"></script>
-  <script>
-    window.addEventListener("load", function () {
-      if (typeof Vouches !== "undefined" && typeof Vouches.render === "function") {
-        Vouches.render("vouchesContainer", "aa-gang-v2");
-      } else {
-        console.error("No se pudo cargar Vouches.");
-      }
-    });
-  </script>
+        .discord-btn:hover {
+            background-color: #5b6eae;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
-  <img class="banner" src="standard-1.gif" alt="AA Banner" />
-  <img class="logo" src="standard.gif" alt="AA Logo" />
-  <h1>Reviews & Vouches</h1>
-  <div id="vouchesContainer"></div>
-  <a class="discord-btn" href="https://discord.gg/UMRYAnwXyS" target="_blank">Unirse al Discord</a>
+    <!-- Banner -->
+    <img class="banner" src="standard (1).gif" alt="AA Banner" />
+
+    <!-- Logo -->
+    <img class="logo" src="standard.gif" alt="AA Logo" />
+
+    <!-- Title -->
+    <h1>Reviews & Vouches</h1>
+
+    <!-- MyVouches embed -->
+    <div id="vouchesContainer"></div>
+
+    <!-- Discord Button -->
+    <a class="discord-btn" href="https://discord.gg/UMRYAnwXyS" target="_blank">Unirse al Discord</a>
 </body>
 </html>
