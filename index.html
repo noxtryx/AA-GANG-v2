@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AA GANG Reviews</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>AA GANG v2 - Reviews</title>
+
     <!-- MyVouches Embed -->
     <link rel="stylesheet" href="https://myvouch.es/storage/assets/vouches.css"/>
     <script>window.slug = 'aa-gang-v2'</script>
     <script src="https://myvouch.es/storage/assets/vouches.js"></script>
+
     <style>
         @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(20px); }
@@ -16,61 +18,70 @@
 
         body {
             margin: 0;
-            background: linear-gradient(145deg, #000000, #1a0000);
-            color: white;
             font-family: 'Segoe UI', sans-serif;
+            background: url("aav2 banner.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: white;
             display: flex;
             flex-direction: column;
             align-items: center;
             animation: fadeInUp 1s ease-out;
+            backdrop-filter: brightness(0.7);
         }
 
         .banner {
-            margin-top: 10px;
+            margin-top: 20px;
             height: 60px;
             width: auto;
-            max-width: 80%;
+            max-width: 90%;
             object-fit: contain;
-            box-shadow: 0 0 10px red;
-            border-radius: 6px;
+            box-shadow: 0 0 12px #ff0059;
+            border-radius: 8px;
+            animation: fadeInUp 1s ease-out;
         }
 
         .logo {
-            margin-top: 20px;
-            width: 120px;
-            height: 120px;
+            margin-top: 25px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
-            box-shadow: 0 0 20px #ff1a1a;
+            box-shadow: 0 0 25px #ff1a1a;
             animation: fadeInUp 1s ease-out;
         }
 
         h1 {
-            color: #ff1a1a;
             margin: 20px 0 10px;
-            font-size: 32px;
-            text-shadow: 0 0 8px red;
+            font-size: 34px;
+            color: #ff3c3c;
+            text-shadow: 0 0 10px red;
+            animation: fadeInUp 1.2s ease-out;
         }
 
         #vouchesContainer {
             width: 90%;
             max-width: 800px;
-            margin-top: 20px;
-            animation: fadeInUp 1s ease-out;
+            margin-top: 25px;
+            animation: fadeInUp 1.3s ease-out;
+            background-color: rgba(0,0,0,0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #ff1a1a44;
         }
 
         .discord-btn {
             margin-top: 30px;
-            padding: 12px 24px;
+            padding: 12px 26px;
             background-color: #7289da;
             color: white;
             font-weight: bold;
             border: none;
-            border-radius: 8px;
+            border-radius: 10px;
             font-size: 16px;
             cursor: pointer;
             text-decoration: none;
-            box-shadow: 0 0 10px #7289da;
-            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 0 14px #7289da;
+            transition: all 0.3s ease;
+            animation: fadeInUp 1.4s ease-out;
         }
 
         .discord-btn:hover {
@@ -81,18 +92,18 @@
 </head>
 <body>
     <!-- Banner -->
-    <img class="banner" src="standard (1).gif" alt="AA Banner" />
+    <img class="banner" src="standard (1).gif" alt="AA GANG Banner" />
 
     <!-- Logo -->
-    <img class="logo" src="standard.gif" alt="AA Logo" />
+    <img class="logo" src="standard.gif" alt="AA GANG Logo" />
 
     <!-- Title -->
-    <h1>Reviews & Vouches</h1>
+    <h1>AA GANG v2 - Reviews & Vouches</h1>
 
-    <!-- MyVouches embed -->
+    <!-- Vouches -->
     <div id="vouchesContainer"></div>
 
-    <!-- Discord Button -->
+    <!-- Discord Invite -->
     <a class="discord-btn" href="https://discord.gg/UMRYAnwXyS" target="_blank">Unirse al Discord</a>
 </body>
 </html>
